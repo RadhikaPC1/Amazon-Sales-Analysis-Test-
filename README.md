@@ -20,13 +20,15 @@ Sales management plays a crucial role in **reducing costs, increasing profits, a
 ✅ **Yearly-Month-wise Sales Comparison**  
 ✅ **Average Order Value (AOV)**  
 ✅ **Top-Selling Categories & Products**  
-✅ **Sales by Region** *(if applicable)*  
+✅ **Sales by Region** 
 ✅ **Customer Purchase Behavior Trends**  
 
 ## 🛠️ Tools & Technologies  
+- **Excel** - Dataset
 - **Power BI** – Interactive data visualization  
 - **DAX (Data Analysis Expressions)** – Sales & trend analysis calculations  
 - **Power Query** – Data transformation & cleaning  
-- **SQL** – Data extraction & analysis  
+- **SQL** – Data extraction & analysis
+
 
 
