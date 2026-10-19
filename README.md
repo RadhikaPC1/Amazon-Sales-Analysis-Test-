@@ -1,34 +1,130 @@
-# 📊 Amazon Sales Analysis Dashboard  
+# 📊 Amazon Sales Analysis Dashboard (Power BI)
 
-Welcome to the **Amazon Sales Analysis Dashboard**, designed to analyze **sales trends, key metrics, and relationships between attributes** to help businesses optimize their **sales management strategies**. This project follows the **ETL (Extract-Transform-Load) process** to clean, transform, and analyze sales data.  
-
-## 🚀 Project Overview  
-Sales management plays a crucial role in **reducing costs, increasing profits, and staying competitive** in the e-commerce industry. This analysis provides **valuable insights into Amazon's sales trends** across different time periods, helping businesses make **data-driven decisions**.  
-
-### **Key Business Insights**  
-📌 **Why is this important?**  
-- Helps **identify seasonal sales trends** (Month-wise, Year-wise)  
-- Provides **insights into revenue growth & profitability**  
-- Analyzes **factors affecting sales performance**  
-- Finds **meaningful relationships between key attributes**  
-
-### **Key Performance Indicators (KPIs)**  
-✅ **Total Sales Revenue**  
-✅ **Number of Orders**  
-✅ **Month-wise Sales Trends**  
-✅ **Year-wise Sales Trends**  
-✅ **Yearly-Month-wise Sales Comparison**  
-✅ **Average Order Value (AOV)**  
-✅ **Top-Selling Categories & Products**  
-✅ **Sales by Region** 
-✅ **Customer Purchase Behavior Trends**  
-
-## 🛠️ Tools & Technologies  
-- **Excel** - Dataset
-- **Power BI** – Interactive data visualization  
-- **DAX (Data Analysis Expressions)** – Sales & trend analysis calculations  
-- **Power Query** – Data transformation & cleaning  
-- **SQL** – Data extraction & analysis
+An interactive **Power BI dashboard** that analyses global sales performance across regions, countries, products, sales channels and order priorities. It turns raw transactional data (2010–2017) into clear KPIs and visuals so that revenue, cost, profit and product demand can be explored in a few clicks.
 
 
+---
+
+## 📌 Table of Contents
+
+- [Project Overview](#-project-overview)
+- [Key Metrics](#-key-metrics)
+- [Dashboard Features](#-dashboard-features)
+- [Visuals Explained](#-visuals-explained)
+- [Key Insights](#-key-insights)
+- [Dataset](#-dataset)
+- [Tools & Technologies](#-tools--technologies)
+- [Repository Structure](#-repository-structure)
+- [How to Use](#-how-to-use)
+- [Future Improvements](#-future-improvements)
+- [Author](#-author)
+
+---
+
+## 🎯 Project Overview
+
+**Objective:** Build a single-page, interactive sales report that helps stakeholders answer questions such as:
+
+- How much revenue, cost and profit did the business generate?
+- Which regions and countries drive the most sales?
+- Which product categories sell the most units and earn the most revenue?
+- How are orders split across sales channels (Online / Offline) and order priorities (Low / Medium / High / Critical)?
+- How do results change by country, year, month, order date or ship date?
+
+**Scope:** 76 countries · 12 product categories · orders from **Feb 2010 to May 2017**
+
+---
+
+## 📈 Key Metrics
+
+| KPI | Value |
+|---|---|
+| Total Revenue | **$137.35M** |
+| Total Cost | **$93.18M** |
+| Total Profit | **$44.17M** |
+| Profit Margin (Profit ÷ Revenue) | **≈ 32.2%** |
+| Countries Covered | **76** |
+| Product Categories | **12** |
+
+---
+
+## ✨ Dashboard Features
+
+- **KPI cards** for Sales, Total Cost, Total Profit, Total Revenue, Countries and Items
+- **Slicers / filters** for Country, Year, Month, Ship Date and Order Date (date range sliders)
+- **Cross-filtering:** clicking any chart updates every other visual
+- **Dark theme** layout designed for readability
+- **Mixed visuals:** combo chart, pie, donut, treemap and bar charts
+
+---
+
+## 🧩 Visuals Explained
+
+| Visual | Chart Type | What It Shows |
+|---|---|---|
+| Total Sales and Profit by Region | Column + Line (combo) | Sales (columns) compared with profit (line) for each region |
+| Sales Distribution by Item | Pie chart | Share of sales contributed by each product category |
+| Top 10 Total Sales by Country | Treemap | The ten highest-selling countries, sized by sales |
+| Total Revenue by Item | Donut chart | Revenue split across product categories |
+| Total Units Sold by Item | Horizontal bar chart | Units sold per product category, ranked |
+| Items Priority Distribution by Sales Channel | Donut chart | Order priority (C / H / L / M) split by sales channel |
+
+---
+
+## 🔍 Key Insights
+
+- **Healthy margins:** Profit is roughly one-third of revenue (≈ 32%), with costs making up about 68%.
+- **Top countries:** The Gambia leads the Top 10 with about **$549.4M** in sales, followed by Switzerland and Turkmenistan at about **$274.7M** each. Syria, Tuvalu and the United Kingdom each show about **$137.35M**.
+- **Most popular products by volume:** **Cosmetics (84K units)**, **Clothes (71K)** and **Beverages (57K)** sell the most units, while **Snacks (14K)** and **Vegetables (20K)** sell the least.
+- **Revenue is concentrated:** The top three item categories generate roughly **$37M, $31M and $30M** respectively, far ahead of the smaller categories.
+- **Balanced order priorities:** Orders are spread fairly evenly across Critical, High, Medium and Low priorities for both sales channels, with no single priority dominating.
+- **Declining trend across regions:** Sales and profit fall steadily from the largest region to the smallest, showing a strong concentration in the top few regions.
+
+> 📝 *Insights are based on the dashboard's default view (all countries, all dates). Values change when filters are applied.*
+
+---
+
+## 🗂 Dataset
+
+The dashboard appears to be built on a transactional sales-records dataset with the following typical fields:
+
+| Column | Description |
+|---|---|
+| Region | Geographic region of the order |
+| Country | Country of the order |
+| Item Type | Product category (12 types, e.g. Cosmetics, Clothes, Beverages) |
+| Sales Channel | Online / Offline |
+| Order Priority | C (Critical), H (High), M (Medium), L (Low) |
+| Order Date | Date the order was placed |
+| Ship Date | Date the order was shipped |
+| Units Sold | Number of units sold |
+| Unit Price | Selling price per unit |
+| Unit Cost | Cost per unit |
+| Total Revenue | Units Sold × Unit Price |
+| Total Cost | Units Sold × Unit Cost |
+| Total Profit | Total Revenue − Total Cost |
+
+*(Update this table to match your actual source file.)*
+
+---
+
+## 🛠 Tools & Technologies
+
+- **Power BI Desktop**: data modelling, visuals and report design
+- **Power Query**: data cleaning and transformation
+- **DAX**: calculated measures (Total Revenue, Total Cost, Total Profit, etc.)
+- **Excel / CSV**: source data
+
+---
+
+
+## 🔮 Future Improvements
+
+- Add year-over-year and month-over-month growth indicators
+- Add a profit-margin % card and a trend line over time
+- Add drill-through pages for country and product detail
+- Include forecasting for future sales
+- Publish to Power BI Service for easy sharing
+
+---
 
