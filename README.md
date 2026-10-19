@@ -2,12 +2,11 @@
 
 An interactive **Power BI dashboard** that analyses global sales performance across regions, countries, products, sales channels and order priorities. It turns raw transactional data (2010–2017) into clear KPIs and visuals so that revenue, cost, profit and product demand can be explored in a few clicks.
 
-
 ---
 
 ## 🎯 Project Overview
 
-**Objective:** Build a single-page, interactive sales report that helps stakeholders answer questions such as:
+**Objective:** Build an interactive sales report that helps stakeholders answer questions such as:
 
 - How much revenue, cost and profit did the business generate?
 - Which regions and countries drive the most sales?
@@ -34,11 +33,12 @@ An interactive **Power BI dashboard** that analyses global sales performance acr
 
 ## ✨ Dashboard Features
 
+- **3 report pages:** Cover page, Overall Insights, and Trends by Year and Month
 - **KPI cards** for Sales, Total Cost, Total Profit, Total Revenue, Countries and Items
 - **Slicers / filters** for Country, Year, Month, Ship Date and Order Date (date range sliders)
 - **Cross-filtering:** clicking any chart updates every other visual
 - **Dark theme** layout designed for readability
-- **Mixed visuals:** combo chart, pie, donut, treemap and bar charts
+- **Mixed visuals:** combo chart, pie, donut, treemap, line and bar charts
 
 ---
 
@@ -52,6 +52,9 @@ An interactive **Power BI dashboard** that analyses global sales performance acr
 | Total Revenue by Item | Donut chart | Revenue split across product categories |
 | Total Units Sold by Item | Horizontal bar chart | Units sold per product category, ranked |
 | Items Priority Distribution by Sales Channel | Donut chart | Order priority (C / H / L / M) split by sales channel |
+| Total Revenue and Profit by Year | Line chart | Yearly revenue and profit trend |
+| Total Sales and Item by Year | Line chart | Yearly sales for each item type |
+| Total Units Sold by Year | Column chart | Yearly unit volume |
 
 ---
 
@@ -70,8 +73,6 @@ An interactive **Power BI dashboard** that analyses global sales performance acr
 
 ## 🗂 Dataset
 
-The dashboard appears to be built on a transactional sales-records dataset with the following typical fields:
-
 | Column | Description |
 |---|---|
 | Region | Geographic region of the order |
@@ -88,8 +89,6 @@ The dashboard appears to be built on a transactional sales-records dataset with 
 | Total Cost | Units Sold × Unit Cost |
 | Total Profit | Total Revenue − Total Cost |
 
-*(Update this table to match your actual source file.)*
-
 ---
 
 ## 🛠 Tools & Technologies
@@ -101,14 +100,18 @@ The dashboard appears to be built on a transactional sales-records dataset with 
 
 ---
 
-
 ## 🔮 Future Improvements
 
 - Add year-over-year and month-over-month growth indicators
-- Add a profit-margin % card and a trend line over time
+- Add a profit-margin % card
 - Add drill-through pages for country and product detail
 - Include forecasting for future sales
 - Publish to Power BI Service for easy sharing
 
 ---
 
+
+
+## 📬 Contact
+
+**Your Name** · [LinkedIn](https://linkedin.com/in/your-profile) · [Email](mailto:your.email@example.com)
