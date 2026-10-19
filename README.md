@@ -5,22 +5,6 @@ An interactive **Power BI dashboard** that analyses global sales performance acr
 
 ---
 
-## 📌 Table of Contents
-
-- [Project Overview](#-project-overview)
-- [Key Metrics](#-key-metrics)
-- [Dashboard Features](#-dashboard-features)
-- [Visuals Explained](#-visuals-explained)
-- [Key Insights](#-key-insights)
-- [Dataset](#-dataset)
-- [Tools & Technologies](#-tools--technologies)
-- [Repository Structure](#-repository-structure)
-- [How to Use](#-how-to-use)
-- [Future Improvements](#-future-improvements)
-- [Author](#-author)
-
----
-
 ## 🎯 Project Overview
 
 **Objective:** Build a single-page, interactive sales report that helps stakeholders answer questions such as:
