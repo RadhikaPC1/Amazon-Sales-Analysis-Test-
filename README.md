@@ -111,7 +111,3 @@ An interactive **Power BI dashboard** that analyses global sales performance acr
 ---
 
 
-
-## 📬 Contact
-
-**Your Name** · [LinkedIn](https://linkedin.com/in/your-profile) · [Email](mailto:your.email@example.com)
